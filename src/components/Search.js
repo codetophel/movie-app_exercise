@@ -32,10 +32,10 @@ const Search = () => {
       </form>
 
       {movies.length > 0 && <p className='mt-2'>Search Results</p>}
-      <div className='grid grid-cols-4 place-items-center gap-3 mt-3'>
+      <div className='grid grid-cols-2 md:grid-cols-3 place-items-center gap-3 mt-3'>
         {movies.map((mov) => {
           return (
-            <div className='flex items-center flex-col '>
+            <div className='flex items-center flex-col mb-3'>
               <img
                 key={mov.imdbID}
                 src={mov.Poster}
